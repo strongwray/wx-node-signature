@@ -1,0 +1,32 @@
+{
+  "name": "wx-node-signature",
+  "version": "1.0.0",
+  "description": "this is to deal with the signature",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strongwray/wx-node-signature.git"
+  },
+  "keywords": [
+    "wx",
+    "node"
+  ],
+  "author": "wray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/strongwray/wx-node-signature/issues"
+  },
+  "homepage": "https://github.com/strongwray/wx-node-signature#readme",
+  "dependencies": {
+    "async": "^2.0.1",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "request": "^2.74.0",
+    "sha1": "^1.1.1"
+  }
+}
