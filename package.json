@@ -2,7 +2,7 @@
   "name": "wx-node-signature",
   "version": "1.0.0",
   "description": "this is to deal with the signature",
-  "main": "server.js",
+  "main": "wx_server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
