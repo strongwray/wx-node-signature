@@ -4,6 +4,12 @@ const express =  require('express'),
       wxSignature = require('./wx_signature'),
       app = express();
 
+//微信2小时刷新(动态获取access_token以及jsapi_ticket)
+  wxSignature.getTokenAndTicket(); //第一次初始化
+  setInterval(function(){
+  wxSignature.getTokenAndTicket();
+  },7200)
+
 //请求主体解析
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
