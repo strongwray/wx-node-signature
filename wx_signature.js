@@ -11,6 +11,7 @@ exports.wxSignature = function(req,res,url){
       obj.nonceStr = Math.random().toString(36).substr(2,15), //生成签名的随机串
       obj.appId = config.wxConfig.appId;
       obj.signature = signatureStr(config.jsapi_ticket,obj.nonceStr,obj.timestamp,url) //生成签名
+      res.set("Access-Control-Allow-Origin","*") //设置解决跨域问题
       res.send(obj)
 }
 //签名认证
