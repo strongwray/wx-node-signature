@@ -20,6 +20,7 @@ exports.getWxUserInfor = function(req,res){
       request(getInforUrl,function (error,response,body) {
           if (!error && response.statusCode == 200) {
                 let userData = JSON.parse(body);
+                res.set("Access-Control-Allow-Origin","*") //设置解决跨域问题
                 res.send(userData)
             }
     })
