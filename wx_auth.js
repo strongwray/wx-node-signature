@@ -1,7 +1,7 @@
 'use strict'
 const async = require('async'),
       request = require('request'),
-      config = require('../config');
+      config = require('./config');
 
 //获取微信用户信息
 exports.getWxUserInfor = function(req,res){
