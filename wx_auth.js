@@ -16,6 +16,7 @@ exports.getWxUserInfor = function(req,res){
             if (!error && response.statusCode == 200) {
                   let tokenData = JSON.parse(body);
                   if(type == 1){
+                    res.set("Access-Control-Allow-Origin","*") //设置解决跨域问题
                     res.send(tokenData)
                   } else {
                     callback(null,tokenData);
